@@ -5,13 +5,14 @@ function takeANumber(line, custName) {
   }
 
 function nowServing(katzDeliLine) {
-   var n = katzDeliLine.length;
-    if (n === 0) {
+    if (katzDeliLine.length === 0) {
       return "There is nobody waiting to be served!"
     }
     else {
-      return `Currently serving ${katzDeliLine[0]}.`
-    }
-    katzDeliLine.shift()
-    return katzDeliLine
+      let current = katzDeliLine.shift();
+      return `Currently serving ${current}.`
+  }
 }
+
+
+
