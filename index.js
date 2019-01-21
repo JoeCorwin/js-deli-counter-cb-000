@@ -20,7 +20,7 @@ function currentLine(line) {
   } else {
     do {
       return line[line.length - 1]
-      
+
     } while (line.length > 0)
   }
 }
