@@ -21,7 +21,7 @@ function currentLine(line) {
     return "The line is currently empty."
   } else {
       for (n = line.length; n === 0; --n) {
-      current_line.push(`${n}. ${line[n - 1]}`)
+      current_line.push(`${n}. ${line[n]}`)
       }
 
       return `The line is currently: ${current_line}`
